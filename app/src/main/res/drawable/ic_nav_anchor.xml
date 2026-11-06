@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Camera/Sensor Body -->
+    <path
+        android:strokeColor="#ECEFF2"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M 3 7 C 3 5.9 3.9 5 5 5 L 8 5 L 9.5 3 L 14.5 3 L 16 5 L 19 5 C 20.1 5 21 5.9 21 7 L 21 18 C 21 19.1 20.1 20 19 20 L 5 20 C 3.9 20 3 19.1 3 18 Z" />
+    <!-- Focal Aperture -->
+    <path
+        android:strokeColor="#F7B83D"
+        android:strokeWidth="1.6"
+        android:pathData="M 12 8.5 A 3.5 3.5 0 1 0 12 15.5 A 3.5 3.5 0 1 0 12 8.5" />
+</vector>

@@ -221,10 +221,10 @@ fun AlarmRingingScreen(
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(42.dp)
-                        .testTag("simulate_alarm_match_button")
+                        .testTag("manual_override_button")
                 ) {
                     Text(
-                        text = "TEST // FORCE DISARM",
+                        text = "MANUAL OVERRIDE // DISARM",
                         fontFamily = SpaceGrotesk,
                         fontSize = 11.sp,
                         letterSpacing = 1.sp,

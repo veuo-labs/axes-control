@@ -26,14 +26,10 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import com.example.data.UserPreferencesRepository
 import com.example.receiver.AlarmReceiver
-import com.example.ui.screens.AboutScreen
 import com.example.ui.screens.AlarmRingingScreen
 import com.example.ui.screens.CameraObjectScanScreen
-import com.example.ui.screens.FeedSimulatorScreen
 import com.example.ui.screens.MainDashboardScreen
 import com.example.ui.screens.OnboardingScreen
-import com.example.ui.screens.PrivacyPolicyScreen
-import com.example.ui.screens.SettingsScreen
 import com.example.ui.theme.BgDark
 import com.example.ui.theme.MyApplicationTheme
 
@@ -41,11 +37,7 @@ enum class Screen {
     ONBOARDING,
     DASHBOARD,
     CAMERA_SCAN,
-    ALARM_RINGING,
-    FEED_SIMULATOR,
-    SETTINGS,
-    PRIVACY,
-    ABOUT
+    ALARM_RINGING
 }
 
 class MainActivity : ComponentActivity() {
@@ -125,10 +117,6 @@ fun AxesControlApp(
                     Screen.DASHBOARD -> {
                         MainDashboardScreen(
                             onNavigateToScanObject = { currentScreen = Screen.CAMERA_SCAN },
-                            onNavigateToFeedSimulator = { currentScreen = Screen.FEED_SIMULATOR },
-                            onNavigateToSettings = { currentScreen = Screen.SETTINGS },
-                            onNavigateToPrivacy = { currentScreen = Screen.PRIVACY },
-                            onNavigateToAbout = { currentScreen = Screen.ABOUT },
                             onTriggerAlarmRinging = { currentScreen = Screen.ALARM_RINGING }
                         )
                     }
@@ -142,35 +130,6 @@ fun AxesControlApp(
                     Screen.ALARM_RINGING -> {
                         AlarmRingingScreen(
                             onDismissed = { currentScreen = Screen.DASHBOARD }
-                        )
-                    }
-
-                    Screen.FEED_SIMULATOR -> {
-                        FeedSimulatorScreen(
-                            onNavigateBack = { currentScreen = Screen.DASHBOARD },
-                            onOpenSettings = { currentScreen = Screen.SETTINGS }
-                        )
-                    }
-
-                    Screen.SETTINGS -> {
-                        SettingsScreen(
-                            onNavigateBack = { currentScreen = Screen.DASHBOARD },
-                            onNavigateScanObject = { currentScreen = Screen.CAMERA_SCAN },
-                            onTestAlarmRinging = { currentScreen = Screen.ALARM_RINGING },
-                            onNavigatePrivacy = { currentScreen = Screen.PRIVACY },
-                            onNavigateAbout = { currentScreen = Screen.ABOUT }
-                        )
-                    }
-
-                    Screen.PRIVACY -> {
-                        PrivacyPolicyScreen(
-                            onNavigateBack = { currentScreen = Screen.DASHBOARD }
-                        )
-                    }
-
-                    Screen.ABOUT -> {
-                        AboutScreen(
-                            onNavigateBack = { currentScreen = Screen.DASHBOARD }
                         )
                     }
                 }

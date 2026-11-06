@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Outer precision dial arc -->
+    <path
+        android:strokeColor="#ECEFF2"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round"
+        android:pathData="M 4 15 A 8.5 8.5 0 1 1 20 15" />
+    <!-- Needle dial indicator -->
+    <path
+        android:strokeColor="#F7B83D"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:pathData="M 12 12 L 15 8" />
+    <!-- Pivot dot -->
+    <path
+        android:fillColor="#F7B83D"
+        android:pathData="M 12 11 A 1 1 0 1 0 12 13 A 1 1 0 1 0 12 11" />
+</vector>
