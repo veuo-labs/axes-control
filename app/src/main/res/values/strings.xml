@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Axes Control</string>
+    <string name="accessibility_service_description">Monitors reel scrolls on Instagram and TikTok to enforce your daily limit.</string>
+</resources>

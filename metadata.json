@@ -1,0 +1,6 @@
+{
+  "name": "Axes Control",
+  "description": "Minimalist reel quota tracker and camera visual alarm by zainaxes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,47 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <!-- Outer thin ring -->
+    <path
+        android:strokeColor="#343C47"
+        android:strokeWidth="1.5"
+        android:pathData="M 48 6 A 42 42 0 1 0 48 90 A 42 42 0 1 0 48 6" />
+    <!-- Golden Accent segments -->
+    <path
+        android:strokeColor="#F7B83D"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M 48 10 A 38 38 0 0 1 86 48" />
+    <path
+        android:strokeColor="#F7B83D"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M 48 86 A 38 38 0 0 1 10 48" />
+    <!-- Aperture Blades -->
+    <path
+        android:strokeColor="#ECEFF2"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:pathData="M 48 24 L 64 36 L 56 56 Z" />
+    <path
+        android:strokeColor="#ECEFF2"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:pathData="M 72 48 L 60 64 L 40 56 Z" />
+    <path
+        android:strokeColor="#ECEFF2"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:pathData="M 48 72 L 32 60 L 40 40 Z" />
+    <path
+        android:strokeColor="#ECEFF2"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:pathData="M 24 48 L 36 32 L 56 40 Z" />
+    <!-- Center focal point -->
+    <path
+        android:fillColor="#F7B83D"
+        android:pathData="M 48 45 A 3 3 0 1 0 48 51 A 3 3 0 1 0 48 45" />
+</vector>
